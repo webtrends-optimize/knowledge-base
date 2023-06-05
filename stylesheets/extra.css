@@ -1,0 +1,194 @@
+/* Theme */
+[data-md-color-scheme="youtube"] {
+    --md-primary-fg-color:        #283A4A;
+    --md-primary-fg-color--light: #ECB7B7;
+    --md-primary-fg-color--dark:  #242D35;
+}
+:root, [data-md-color-accent=indigo] {
+    --md-typeset-a-color: hsl(208 100% 50% / 1) !important;
+    --md-accent-fg-color: hsl(208 100% 30% / 1) !important;
+}
+
+/* Header */
+/* .md-banner { background-color: var(--md-primary-fg-color); } */
+.md-banner { background-color: #e69500; }
+
+.md-header, .md-tabs {
+    background-image: linear-gradient(to right, #034480, #12babb);
+}
+.md-header > nav > a.md-header__button.md-logo { margin-right: 0; padding-right: 0; }
+
+@media all and (min-width: 1220px) {
+    .md-tabs__link:hover {
+        color: orange;
+    }
+
+    a.md-tabs__link {
+        line-height: 48px;
+        margin-top: 0;
+    }
+}
+
+button.md-top {
+    padding-right: 1.1rem;
+}
+
+/* Sidebar */
+@media all and (min-width: 76.25em){
+    .md-sidebar.md-sidebar--primary {
+        position: relative;
+        top: 0 !important;
+        height: auto;
+    }
+}
+
+.md-nav__title, .md-nav--primary > ul > li > label.md-nav__link { 
+    text-transform: uppercase; 
+    opacity: .7; 
+}
+
+.md-nav__title, .md-nav--primary .md-nav__item--active > label.md-nav__link[for] {
+    color: #034480;
+}
+
+/* Hide default toggle labels */
+@media all and (min-width: 76.25em){
+    div.md-main__inner {
+        max-width: 95vw;
+    }
+
+    .md-nav--primary > ul > li > nav > ul > li.md-nav__item--nested > label {
+        display: none;
+    }
+    
+    .md-nav--primary > ul > li > nav > ul > li.md-nav__item--nested > nav {
+        margin: 30px -.6rem 0
+    }
+    
+    .md-nav--primary > ul > li > nav > ul > li.md-nav__item--nested > nav > label.md-nav__title {
+        display: block;
+        pointer-events: none;
+    }
+}
+
+[data-md-component="announce"] a {
+    color: white;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+
+[data-md-component="announce"] a:hover {
+    color: white;
+    text-decoration: underline;
+}
+
+@media all and (min-width: 550px) {
+    [data-md-component="announce"] a {
+        margin-left: 20px;
+    }
+
+}
+
+.md-header__source {
+    max-width: 110px;
+    text-align: right; 
+}
+
+.wto-flex {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.wto-flex > .wto-flex-2 {
+    flex: 1 1 calc(50% - 50px);
+    margin: 0 20px 20px 0;
+}
+
+.wto-stacked-2 {
+    display: inline-block; width: calc(50% - 10px); vertical-align: top;
+}
+
+.wto-flex > .wto-flex-3 {
+    flex: 1 1 33%;
+    margin: 0 20px 20px 0;
+}
+
+.wto-flex > .wto-flex-4 {
+    flex: 1 1 25%;
+    margin: 0 20px 20px 0;
+}
+
+@media all and (max-width: 1100px) {
+    .wto-flex > .wto-flex-2,
+    .wto-flex > .wto-flex-3,
+    .wto-flex > .wto-flex-4 {
+        flex-basis: 100%;
+    }
+}
+
+.wto-homepage-quicklinks h3 {
+    margin-top: 20px;
+}
+
+
+/* Article */
+
+article p, article span, article a, article li {
+    font-weight: 300;
+}
+
+article a.headerlink {
+    background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="16" height="16" aria-hidden="true"><path fill="hsl(208 100% 50% / 1)" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg>') center center no-repeat;
+    height: 20px;
+    width: 20px;
+    background-size: 100%;
+}
+
+/* Admonitions */
+
+.md-typeset .admonition, .md-typeset details {
+    font-size: inherit;
+}
+
+
+/* Feedback */
+
+form.md-feedback {
+    background: #eee;
+    padding: 20px;
+}
+
+form.md-feedback img {
+    margin: 0 10px;
+}
+
+#footer-contact-support button {
+    background: var(--md-primary-fg-color);
+    color: white;
+    cursor: pointer; 
+    padding: 10px 20px;
+    margin: 0 10px;
+}
+
+#footer-contact-support button:hover {
+    opacity: .8;
+}
+
+/* Previous / next page links */
+#prev-next-page a {
+    background: #034480;
+    border: 2px #fff solid;
+    flex: 1 1 50%;
+    align-items: center;
+    color: white;
+}
+
+#prev-next-page a:hover {
+    background: var(--md-typeset-a-color);
+}
+
+@media screen and (max-width: 44.9375em){
+    .md-footer__link--prev .md-footer__title {
+        display: block;
+    }    
+}
