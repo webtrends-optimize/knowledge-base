@@ -27,6 +27,7 @@ See these guides for other environments:
 
 ## Quick Links
 
+<div class="wto-flex" markdown>
 <div class="wto-stacked-2 wto-homepage-quicklinks" markdown>
 
 ### Getting started
@@ -68,4 +69,5 @@ See these guides for other environments:
 ### Integrations
 - [Something](./somewhere)
 
+</div>
 </div>

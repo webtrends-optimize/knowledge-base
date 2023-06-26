@@ -97,6 +97,7 @@ button.md-top {
 .wto-flex {
     display: flex;
     flex-wrap: wrap;
+    gap: 15px;
 }
 
 .wto-flex > .wto-flex-2 {
@@ -105,7 +106,8 @@ button.md-top {
 }
 
 .wto-stacked-2 {
-    display: inline-block; width: calc(50% - 10px); vertical-align: top;
+    vertical-align: top;
+    flex: 1 1 calc(50% - 30px);
 }
 
 .wto-flex > .wto-flex-3 {
@@ -129,14 +131,12 @@ button.md-top {
 .wto-homepage-quicklinks {
     border: 1px #ccc solid;
     border-radius: 4px;
-    margin-bottom: 10px
 }
 
 .wto-homepage-quicklinks h3 {
     margin: 0;
     background: #eee;
     padding: 10px;
-    margin-top: 20px;
 }
 
 .wto-homepage-quicklinks ul {
