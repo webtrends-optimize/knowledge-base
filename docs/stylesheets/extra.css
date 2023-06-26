@@ -126,8 +126,25 @@ button.md-top {
     }
 }
 
+.wto-homepage-quicklinks {
+    border: 1px #ccc solid;
+    border-radius: 4px;
+    margin-bottom: 10px
+}
+
 .wto-homepage-quicklinks h3 {
+    margin: 0;
+    background: #eee;
+    padding: 10px;
     margin-top: 20px;
+}
+
+.wto-homepage-quicklinks ul {
+    list-style: none;
+}
+
+.wto-homepage-quicklinks li {
+    margin-left:0 !important;
 }
 
 
