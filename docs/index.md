@@ -5,28 +5,25 @@ hide:
 
 # What is Webtrends Optimize?
 
-!!! failure "UNDER CONSTRUCTION"
-
-    This page is under construction.
-
-<!--
 Webtrends Optimize is an experimentation and personalisation platform. With it, you can make intelligent decisions about your website and what to show to users - growing and innovating without risk of damaging conversion rates.
 
 The following 1 page guides are available:
 
-- What is Webtrends Optimize? [View 1 page guide](TODO)
-- Server Side Experimentation in Webtrends Optimize - [View 1 page guide](TODO)
-- Social Proofing in Webtrends Optimize - [View 1 page guide](TODO)
-- Recommendations in Webtrends Optimize - [View 1 page guide](TODO)
+- Introducing Webtrends Optimize [View 1 page guide](/assets/Introducing Webtrends Optimize.pdf)
+- Webtrends Optimize for Retail - COMING SOON
+- Webtrends Optimize for Travel - COMING SOON
+- Webtrends Optimize for Charities - COMING SOON
+- Server Side Experimentation in Webtrends Optimize - COMING SOON
+- Social Proofing in Webtrends Optimize - COMING SOON
+- Recommendations in Webtrends Optimize - COMING SOON
 
 ## Knowledge Base
 
-This is the documentation of Webtrends Optimize for Web.
-
 See these guides for other environments:
 
-- [Server Side](/server-side)
-- [Mobile App](/mobile-app)
+- [Web](/for-web)
+- [Server Side](/for-server-side) COMING SOON
+- [Mobile App](/for-mobile-app) COMING SOON
 
 ## Quick Links
 
@@ -72,5 +69,3 @@ See these guides for other environments:
 - [Something](./somewhere)
 
 </div>
-
--->
