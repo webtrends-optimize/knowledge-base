@@ -1,0 +1,38 @@
+{% extends "base.html" %}
+
+{% block announce %}
+    <span>These help docs are still under construction. We have 100s of new articles still to write. The information here is accurate, but currently limited.</span>
+
+    <script>
+    !function(){
+        let sections = {
+            'for-web': 1,
+            'for-server-side': 1,
+            'for-mobile-app': 1,
+        };
+
+        let viewing = false;
+        let part = location.pathname.split('/')[1];
+        
+        if(part && sections[part]){
+
+            // do stuff 
+            let others = "";
+            for(let section in sections){
+                if(part !== section){
+                    others += `<a href="/${section}/">${section.replace(/\-/g, ' ') } &rsaquo;</a>`
+                }
+            }
+            let message = `<div>You are viewing docs ${ part.replace(/\-/g, ' ') }. See also: <div style="display: inline-block;">${others}</div></div>`;
+            document.write(message);
+
+        } else {
+            
+            let message = `<div>See sections for: <div style="display: inline-block;">${Array.from(Object.keys(sections)).map(section => `<a href="/${section}/">${section.replace(/(for)?\-/g, ' ') } &rsaquo;</a>`).join('')}</div></div>`;
+            document.write(message);
+
+        }
+        
+    }();
+    </script>
+{% endblock %}

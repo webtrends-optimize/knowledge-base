@@ -1,0 +1,195 @@
+site_name: Webtrends Optimize Knowledge Base
+repo_url: https://github.com/webtrends-optimize/knowledge-base
+theme:
+  name: material
+  logo: assets/logo.svg
+  features:
+    - announce.dismiss
+    - content.code.copy
+    - content.tabs.link
+    - navigation.expand
+    - navigation.footer
+    - navigation.tabs
+    # - navigation.tabs.sticky
+    - navigation.top      # back to top button 
+    - navigation.tracking
+    - content.action.edit
+    - content.action.view
+    # - content.code.annotate
+    - content.tooltips
+    # - header.autohide
+    # - navigation.indexes
+    # - navigation.instant    # turn into a SPA
+    # - navigation.prune
+    # - navigation.sections
+    - search.highlight
+    - search.share
+    - search.suggest
+    # - toc.follow
+    # - toc.integrate     # table of contents integrated into the sidebar nav
+
+  custom_dir: overrides
+  palette:
+    scheme: youtube
+nav:
+  - Home: index.md
+  - Roadmap:
+    - Roadmap: roadmap/index.md
+    - Past Releases:
+      - Past Releases: roadmap/past-releases/index.md
+    - Upcoming Releases:
+      - Upcoming Releases: roadmap/upcoming-releases/index.md
+  - For Web:
+    - For Web: for-web/index.md
+    - Getting Started: 
+      - Getting started: for-web/getting-started/index.md
+      - Creating an account: for-web/getting-started/creating-an-account.md
+      - Logging in: for-web/getting-started/logging-in.md
+      #- Dashboard overview: getting-started/dashboard-overview.md
+      - Installing the Chrome Extension: for-web/getting-started/installing-the-chrome-extension.md
+      - Tag Implementation: 
+        - Tag Implementation: for-web/getting-started/tag-implementation/index.md
+  #      - For Shopify: getting-started/tag-implementation/shopify.md
+  #      - For Shopify Plus: getting-started/tag-implementation/shopify-plus.md
+  #    - Global data capture:
+  #      - Global data capture: getting-started/conversion-packages/index.md
+  #      - Conversion Packages:
+  #        - Conversion Packages: getting-started/conversion-packages/index.md
+  #        - For Shopify: getting-started/conversion-packages/shopify.md
+  #        - For Shopify Plus: getting-started/conversion-packages/shopify-plus.md
+  #      - Tag your site with opt_data: getting-started/conversion-packages/opt_data/index.md
+  #      - Mirror Events from GTM: getting-started/conversion-packages/opt_data/index.md
+  #    - Tag Configuration:
+  #      - Global tag code: getting-started/tag-configuration/global-tag-code
+  #      - Load Behaviour: getting-started/tag-configuration/load-behaviour
+  #      - Encryption: getting-started/tag-configuration/encryption
+  #      - Page Masking:
+  #        - Inbuilt masking: getting-started/tag-configuration/page-masking/inbuilt-masking.md
+  #        - Custom masking: getting-started/tag-configuration/page-masking/custom-masking.md
+  #      - Single Page Apps (SPA): getting-started/tag-configuration/single-page-apps
+  #      - Consent Management: getting-started/tag-configuration/consent-management
+  #      - 3rd Party Integrations: integrations
+      - User Management: 
+  #      - Roles: getting-started/user-management/roles.md
+  #      - Users:
+  #        - Invite Users:  getting-started/user-management/users/invite-users.md
+  #        - Manage Users:  getting-started/user-management/users/manage-users.md
+        - Single Sign On (SSO):
+          - Microsoft SSO: for-web/getting-started/user-management/single-sign-on/microsoft-sso.md
+    - Build:
+      - Getting started: for-web/build/index.md
+  #    - Visual Editor: 
+  #      - Introduction: build/visual-editor/index.md
+  #      - Transformations: build/visual-editor/index.md
+  #      - Location: build/visual-editor/index.md
+  #      - Tracking: build/visual-editor/index.md
+  #      - Audiences: build/visual-editor/index.md
+  #      - Configuration: build/visual-editor/index.md
+  #    - Advanced Editor: 
+  #      - Introduction: build/advanced-editor/index.md
+  #      - Transformations: build/advanced-editor/index.md
+  #      - Location: build/advanced-editor/index.md
+  #      - Tracking: build/advanced-editor/index.md
+  #      - Audiences: build/advanced-editor/index.md
+  #      - Configuration: build/advanced-editor/index.md
+  #    - Optimize Build Framework: 
+  #      - Introduction: build/advanced-editor/optimize-build-framework/index.md
+  #      - Layout: build/advanced-editor/optimize-build-framework/index.md
+  #      - Config: build/advanced-editor/optimize-build-framework/index.md
+  #      - Helper Methods: build/advanced-editor/optimize-build-framework/index.md
+  #      - Conditional Activation: build/advanced-editor/optimize-build-framework/index.md
+  #      - Tracking: build/advanced-editor/optimize-build-framework/index.md
+  #    - Velocity Templates: 
+  #      - Using Velocity Templates: build/velocity-templates.md
+  #    - Advanced features: 
+  #      - Social Proofing: build/social-proofing.md
+  #      - Recommendations: build/social-proofing.md
+  #      - Surveys: build/social-proofing.md
+  #  - QA:
+  #    - Getting started: qa/index.md
+  #  - Reporting:
+  #    - Getting started: reporting/index.md
+  #  - Integrations:
+  #    - Enabling Integrations: integrations/index.md
+  #    - Push:
+  #      - Adobe Analytics: integrations/push/index.md
+  #      - Amplitude: integrations/push/index.md
+  #      - AT Internet: integrations/push/index.md
+  #      - ContentSquare: integrations/push/index.md
+  #      - FullStory: integrations/push/index.md
+  #      - Google Analytics 4: integrations/push/index.md
+  #      - Google Tag Manager: integrations/push/index.md
+  #      - Google Universal Analytics: integrations/push/index.md
+  #      - Heap Analytics: integrations/push/index.md
+  #      - Hotjar: integrations/push/index.md
+  #      - Microsoft Clarity: integrations/push/index.md
+  #      - Mixpanel: integrations/push/index.md
+  #      - Mouseflow: integrations/push/index.md
+  #      - Piwik Pro: integrations/push/index.md
+  #      - Piwik Tag Manager: integrations/push/index.md
+  #      - Segment: integrations/push/index.md
+  #      - Sessioncam: integrations/push/index.md
+  #      - Tealium: integrations/push/index.md
+  #      - Creating a custom push integration: integrations/push/index.md 
+  #      - Request a push integration: integrations/push/index.md 
+  #    - Pull: 
+  #      - Facebook Ads: integrations/pull/index.md 
+  #      - Google Ads: integrations/pull/index.md 
+  #      - Google Sheets: integrations/pull/index.md 
+  #      - Krux: integrations/pull/index.md 
+  #      - Shopify Product Feed: integrations/pull/index.md 
+  #      - Shopify Sales History: integrations/pull/index.md 
+  #      - Tealium AudienceStream: integrations/pull/index.md 
+  #      - Request a pull integration: integrations/push/index.md 
+  #    - Notifications:
+  #      - Slack: integrations/push/index.md
+  #      - Teams: integrations/push/index.md
+  #    - Tagging:
+  #      - Shopify: integrations/push/index.md 
+  #      - Google Tag Manager: integrations/push/index.md 
+  #      - Tealium IQ Tag Manager: integrations/push/index.md
+  #      - Request a tag integration: integrations/push/index.md 
+  - For Server Side:
+    - Getting Started:
+      - Getting started: for-server-side/getting-started/index.md
+
+extra_css:
+  - stylesheets/extra.css
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - footnotes
+  - attr_list
+  - md_in_html
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
+      
+  - toc:
+      permalink: ''
+
+plugins:
+  - glightbox
+  - search:
+      separator: '[\s\-,:!=\[\]()"/]+|(?!\b)(?=[A-Z][a-z])|\.(?!\d)|&[lg]t;'
+extra:
+  generator: false
+  social:
+    - icon: fontawesome/brands/youtube
+      link: https://www.youtube.com/@Webtrends-Optimize
+    - icon: fontawesome/brands/linkedin
+      link: https://www.youtube.com/@Webtrends-Optimize
+    - icon: fontawesome/brands/twitter
+      link: https://www.youtube.com/@Webtrends-Optimize
+  analytics:
+    feedback:
+      title: Was this page helpful?
+      ratings:
+        - name: YES
+          data: yes
+          icon: up
+        - name: NO
+          data: no
+          icon: down
+copyright: Copyright &copy; 2023 Webtrends Optimize, Accelerate Group Limited

@@ -1,0 +1,47 @@
+{% if config.extra.analytics %}
+  {% set feedback = config.extra.analytics.feedback %}
+{% endif %}
+
+<!-- Determine whether to show feedback -->
+{% if page.meta and page.meta.hide %}
+  {% if "feedback" in page.meta.hide %}
+    {% set feedback = None %}
+  {% endif %}
+{% endif %}
+
+<!-- Was this page helpful? -->
+{% if feedback %}
+<div style="display: flex; flex-wrap: wrap;">
+  <form class="md-feedback" name="feedback" style="flex: 1 1 30%; min-width: 300px;">
+    <fieldset>
+      <legend class="md-feedback__title">
+        {{ feedback.title }}
+      </legend>
+      <div class="md-feedback__inner">
+
+        <!-- Feedback ratings -->
+        <div class="md-feedback__list">
+          {% for rating in feedback.ratings %}
+            <button
+              class="md-feedback__icon md-icon"
+              type="submit"
+              title="{{ rating.name }}"
+              data-md-value="{{ rating.data }}"
+            >
+              <img alt="{{ rating.name }}" src="/assets/thumbs-{{ rating.icon }}.svg" style="height: 30px;">
+            </button>
+          {% endfor %}
+        </div>
+      </div>
+    </fieldset>
+  </form>
+
+  <div id="footer-contact-support" class="md-feedback" style="flex: 1 1 30%; min-width: 300px; background: #eee; padding: 20px;">
+    <h4 style="margin-top: 0;">Contact Support</h4>
+    <div>
+        <button>Leave a message</button>
+        <button>Launch livechat</button>
+    </div>
+  </div>
+</div>
+{% endif %}
