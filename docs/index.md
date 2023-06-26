@@ -9,7 +9,7 @@ Webtrends Optimize is an experimentation and personalisation platform. With it, 
 
 The following 1 page guides are available:
 
-- Introducing Webtrends Optimize [View 1 page guide](/assets/Introducing Webtrends Optimize.pdf)
+- Introducing Webtrends Optimize [View 1 page guide](/assets/Introducing Webtrends Optimize.pdf){target=_blank}
 - Webtrends Optimize for Retail - COMING SOON
 - Webtrends Optimize for Travel - COMING SOON
 - Webtrends Optimize for Charities - COMING SOON
@@ -17,57 +17,64 @@ The following 1 page guides are available:
 - Social Proofing in Webtrends Optimize - COMING SOON
 - Recommendations in Webtrends Optimize - COMING SOON
 
-## Knowledge Base
-
-See these guides for other environments:
-
-- [Web](/for-web)
-- [Server Side](/for-server-side) COMING SOON
-- [Mobile App](/for-mobile-app) COMING SOON
-
-## Quick Links
+## Quick Links - For Web
 
 <div class="wto-flex" markdown>
 <div class="wto-stacked-2 wto-homepage-quicklinks" markdown>
 
 ### Getting started
-- [Tag Implementation](./somewhere)
-- [Conversion Packages](./somewhere)
-- [Tag Configuration](./somewhere)
-- [User Management](./somewhere)
+
+- [Getting Started introduction](/for-web/getting-started)
+- [Login to the platform](/for-web/getting-started/logging-in)
+- [Tag Implementation](/for-web/getting-started/logging-in)
+- [Single Page Apps](/for-web/getting-started/logging-in)
+- [Consent Management](/for-web/getting-started/logging-in)
+
 
 </div>
 
 <div class="wto-stacked-2 wto-homepage-quicklinks" markdown>
 
 ### Build
-- [Visual Editor](./somewhere)
-- [Advanced Editor](./somewhere)
-- [Optimize Build Framework](./somewhere)
-- [Social Proofing](./somewhere)
-- [Recommendations](./somewhere)
-- [Surveys](./somewhere)
+- Visual Editor
+- Advanced Editor
+- Optimize Build Framework
+- Social Proofing
+- Recommendations
+- Surveys
 
 </div>
 
 <div class="wto-stacked-2 wto-homepage-quicklinks" markdown>
 
 ### QA
-- [Something](./somewhere)
+- Using Preview Links
+- Using the Force Experiment Widget
+- Previewing test data
+- Preview tag updates
+- Preview integrations
 
 </div>
 
 <div class="wto-stacked-2 wto-homepage-quicklinks" markdown>
 
 ### Reporting
-- [Something](./somewhere)
+- Reporting on your first test
+- Filters
+- Dimensions
+- Alerting
+- Statistics
 
 </div>
 
 <div class="wto-stacked-2 wto-homepage-quicklinks" markdown>
 
 ### Integrations
-- [Something](./somewhere)
+- Google Analytics 4 (push)
+- ContentSquare (push)
+- FullStory (push)
+- Amplitude (push)
+- Bloomreach (pull)
 
 </div>
 </div>
