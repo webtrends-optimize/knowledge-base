@@ -106,8 +106,12 @@ nav:
   #      - Social Proofing: build/social-proofing.md
   #      - Recommendations: build/social-proofing.md
   #      - Surveys: build/social-proofing.md
-  #  - QA:
-  #    - Getting started: qa/index.md
+    - QA:
+      - Getting started: for-web/qa/index.md
+    - Reporting:
+      - Getting started: for-web/reporting/index.md
+    - Integrations:
+      - Getting started: for-web/integrations/index.md
   #  - Reporting:
   #    - Getting started: reporting/index.md
   #  - Integrations:
