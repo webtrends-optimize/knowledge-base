@@ -37,10 +37,10 @@ Webtrends Optimize has 3 domains from which we operate, depending on what you're
 These should be added to your existing rules, which will likely include your own domains, services, web analytics services, ad tracking, etc.
 
 ```
-script-src: 'unsafe-eval' 'unsafe-inline' *.webtrends-optimize.com, *.webtrends-optimize.workers.dev
+script-src: 'unsafe-eval' 'unsafe-inline' *.webtrends-optimize.com *.webtrends-optimize.workers.dev
 script-src: *.azurewebsites.net
-connect-src: *.webtrends-optimize.com, *.webtrends-optimize.workers.dev, *.azurewebsites.net
-style-src: 'unsafe-inline' *.webtrends-optimize.com, *.webtrends-optimize.workers.dev
+connect-src: *.webtrends-optimize.com *.webtrends-optimize.workers.dev, *.azurewebsites.net
+style-src: 'unsafe-inline' *.webtrends-optimize.com *.webtrends-optimize.workers.dev
 img-src: *.webtrends-optimize.com
 ```
 
