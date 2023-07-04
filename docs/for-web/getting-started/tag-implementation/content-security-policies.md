@@ -32,7 +32,18 @@ Webtrends Optimize has 3 domains from which we operate, depending on what you're
 - `*.webtrends-optimize.workers.dev` - for custom libraries and geolocation services
 - `*.azure-websites.net` - for custom services, e.g. recommendations, social proofing. **Note:** we recognise that the open domain carries more risk, and if you are able to respond quickly, we can provide you with precise subdomains for the custom work we do as services are created.
 
-### The full set of permissions required, for all services
+### Permissions required for core services
+
+These should be added to your existing rules, which will likely include your own domains, services, web analytics services, ad tracking, etc.
+
+```
+script-src: 'unsafe-eval' 'unsafe-inline' *.webtrends-optimize.com *.webtrends-optimize.workers.dev
+connect-src: *.webtrends-optimize.com *.webtrends-optimize.workers.dev
+style-src: 'unsafe-inline' *.webtrends-optimize.com *.webtrends-optimize.workers.dev
+img-src: *.webtrends-optimize.com
+```
+
+### Permissions required for all services
 
 These should be added to your existing rules, which will likely include your own domains, services, web analytics services, ad tracking, etc.
 
