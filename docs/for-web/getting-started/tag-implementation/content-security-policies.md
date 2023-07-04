@@ -35,9 +35,10 @@ Webtrends Optimize has 3 domains from which we operate, depending on what you're
 ### The full set of permissions required, for all services
 
 ```
-script-src: 'unsafe-eval' 'unsafe-inline' *.webtrends-optimize.com, *.webtrends-optimize.workers.dev, *.azurewebsites.net
+script-src: 'unsafe-eval' 'unsafe-inline' *.webtrends-optimize.com, *.webtrends-optimize.workers.dev
+script-src: *.azurewebsites.net
 connect-src: *.webtrends-optimize.com, *.webtrends-optimize.workers.dev, *.azurewebsites.net
-style-src: 'unsafe-inline' *.webtrends-optimize.com
+style-src: 'unsafe-inline' *.webtrends-optimize.com, *.webtrends-optimize.workers.dev
 img-src: *.webtrends-optimize.com
 ```
 
