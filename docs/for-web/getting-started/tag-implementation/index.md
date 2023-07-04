@@ -25,6 +25,10 @@ Broadly, as mentioned above, this will involve placing one SCRIPT tag into the H
 
 ![Tag Placement](/assets/tag-placement-beforecloseofhead.png)
 
+!!! info "Content Security Policies"
+
+    You may also need to update your Content Security Policies (CSPs) - details are found at [Content Security Policies](/for-web/getting-started/tag-implementation/content-security-policies/).
+
 ## How it works – serving experiences, behavioural tracking
 
 ![WTO Tag Loading Process](/assets/tag-loading-process.png)
