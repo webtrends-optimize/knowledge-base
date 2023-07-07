@@ -1,5 +1,6 @@
 site_name: Webtrends Optimize Knowledge Base
 repo_url: https://github.com/webtrends-optimize/knowledge-base
+edit_uri: edit/main/docs/
 theme:
   name: material
   logo: assets/logo.svg
