@@ -33,6 +33,8 @@ button.md-top {
     padding-right: 1.1rem;
 }
 
+nav.md-tabs > div > ul > li:first-child { display: none; }
+
 /* Sidebar */
 @media all and (min-width: 76.25em){
     .md-sidebar.md-sidebar--primary {
