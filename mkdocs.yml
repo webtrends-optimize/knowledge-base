@@ -51,6 +51,8 @@ nav:
       - Tag Implementation: 
         - Tag Implementation: for-web/getting-started/tag-implementation/index.md
         - Content Security Policies: for-web/getting-started/tag-implementation/content-security-policies.md
+      - Tag Configuration:
+        - Masking: for-web/getting-started/tag-configuration/masking.md
   #      - For Shopify: getting-started/tag-implementation/shopify.md
   #      - For Shopify Plus: getting-started/tag-implementation/shopify-plus.md
   #    - Global data capture:
