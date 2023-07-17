@@ -95,3 +95,42 @@ WT.addEventHandler("hide_show", function(e){
     console.log(e);
 });
 ```
+
+## In test masking
+
+Let's say you want to wait for the page to load before executing your changes, and so you hook into the domready state with jQuery:
+
+``` javascript
+jQuery(document).ready(function(){
+    jQuery('#hero p').text("my new text");
+});
+```
+
+Optimize's layer-2 masking will only take effect up until your code is delivered to the page. At this point, it will step away. 
+
+This third layer of masking needs to happen while you wait for your conditions to be fulfilled. Given you can code these in any way, it is also on you to decide if/how to mask the page.
+
+Example:
+``` javascript
+// Mask the page 
+WT.helpers.css.add('#hero { opacity: 0 !important; }', 'wt-001-mask');
+
+// Make sure there's a safety redisplay
+setTimeout(function(){
+    // Remove the mask
+    WT.helpers.css.del('wt-001-mask');
+}, 4000);
+
+jQuery(document).ready(function(){
+    jQuery('#hero p').text("my new text");
+
+    // Remove the mask
+    WT.helpers.css.del('wt-001-mask');
+});
+```
+
+### How the Optimize Build Framework handles masking
+
+The Optimize Build Framework (OBF) writes styles to the page based on your `Config.cssHide` value. Once polling conditions are fulfilled and transformations are handled, you'll see a `showHide` function called that removes this mask. 
+
+Thankfully, these are not things you need to pay attention to, although if you wish to override the functionality the code is there for you.
