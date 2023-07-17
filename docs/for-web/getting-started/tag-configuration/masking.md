@@ -160,3 +160,19 @@ jQuery(document).ready(function(){
 The Optimize Build Framework (OBF) writes styles to the page based on your `Config.cssHide` value. Once polling conditions are fulfilled and transformations are handled, you'll see a `showHide` function called that removes this mask. 
 
 Thankfully, these are not things you need to pay attention to, although if you wish to override the functionality the code is there for you.
+
+## Impact on page load performance 
+
+All JavaScript has a detrimatental impact on page load performance, but masking plays a critical role in limiting the negative impacts of experimentation. 
+
+Core Web Vitals find Cumulative Layout Shift (CLS) to be one of the most important factors for onpage performance. This is where parts of the page jump, fractionally or drastically, during the page load process. 
+
+For example, a button slowly nudges lower and lower as more aspects load. 
+
+Masking combats this - showing nothing and then the final page at the end. If well-built, your tests should have a near-zero CLS score for this reason. 
+
+Infact, we have found masking to by the remedy to websites with poor CLS scores, where it doesn't impact other metrics too much but solves CLS issues.
+
+Other metrics though, such as First Contentful Paint, will be affected by masking. They are less impactful than CLS, but will be affected. 
+
+The degree to which they're affected depends on page performance, but you can see our requests execute in typically under 150ms (often closer to 30ms).
