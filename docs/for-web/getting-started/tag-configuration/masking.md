@@ -18,6 +18,19 @@ Each of these steps are vital in ensuring there is zero content flickering.
 
 Yes. 
 
+## Before the tag
+
+An alternative implementation approach to adding our script tag as HTML directly to the head of the website is to write it asynchronously with masking.
+
+The approach we take here is:
+
+- Hide the page 
+- Set a safety timeout to remove the masking
+- Write the tag to the page using Javascript asynchronously.
+- Onload and Onerror of the tag, remove the masking
+
+This approach has been used successfully on some request-light websites, and effectively removes Webtrends Optimize from the critical load path.
+
 ## In tag masking
 
 !!! note "24 hour cache"
