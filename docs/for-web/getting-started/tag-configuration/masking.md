@@ -85,6 +85,19 @@ For this, we use the library as below and simply add rules into the array `WT.op
             ],
             css: 'body { opacity: 0.00000001 !important; }'
         },
+        {
+            URLs: [
+                /mysite.com\/basket/i
+            ],
+            css: 'body { opacity: 0.00000001 !important; }'
+        },
+        {
+            URLs: [
+                /\/collections\//i
+            ],
+            css: 'body { opacity: 0.00000001 !important; }'
+        },
+        // other rules
     ];
     // Add things into here if you only want them to show whilst in staging mode.
     if (window.location.href.match(/_wt.mode=staging/i)) {
