@@ -27,3 +27,27 @@ If we're able to do these two things, we can then:
 Our team will typically find this information for you, run it past you to make sure you're satisfied with the approach, and then apply this into your tag for you. Given the sensitivity of the topic, we do this to make sure we begin working together positively.
 
 Future UI integrations will allow one-click enablement of these features for commonly used Consent mechanisms, beginning with One Trust.
+
+## Known optin hooks we use:
+
+**Note**: We appreciate you may put us in another category based on your usage of the platform. 
+
+### Cookiebot
+
+``` javascript
+window.addEventListener('CookiebotOnAccept', function() {
+    if (Cookiebot.consent.marketing) {
+        cb();
+    }
+}, false);
+```
+
+### Onetrust
+
+``` javascript
+window.addEventListener("consent.onetrust", function(ev){
+    if(ev.detail.includes("C0002")){
+        cb();
+    }
+});
+```
