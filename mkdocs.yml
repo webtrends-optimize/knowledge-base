@@ -50,6 +50,8 @@ nav:
       - Installing the Chrome Extension: for-web/getting-started/installing-the-chrome-extension.md
       - Tag Implementation: 
         - Tag Implementation: for-web/getting-started/tag-implementation/index.md
+        - How the tag works: for-web/getting-started/tag-implementation/how-the-tag-works.md
+        - Impact on page load performance: for-web/getting-started/tag-implementation/impact-on-page-load-performance.md
         - Content Security Policies: for-web/getting-started/tag-implementation/content-security-policies.md
       - Tag Configuration: 
         - Tag Configuration: for-web/getting-started/tag-configuration/index.md
@@ -116,6 +118,9 @@ nav:
       - Getting started: for-web/qa/index.md
     - Reporting:
       - Getting started: for-web/reporting/index.md
+      - Stats Engine:
+        - Stats Engine: for-web/reporting/stats-engine/index.md
+        - Taguchi/Fisher Method for Design of Experiments (DoE) in MVTs: for-web/reporting/stats-engine/taguchi-fisher-design-of-experiments-mvt.md
     - Integrations:
       - Getting started: for-web/integrations/index.md
   #  - Reporting:
