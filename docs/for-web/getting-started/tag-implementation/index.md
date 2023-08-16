@@ -8,7 +8,7 @@
 
 This is a highly detailed document. A summary is as follows.
 
-We have to key methods for tag implementation. 
+We have two key methods for tag implementation. 
 
 1. Adding our normal HTML tag to the head of your site.
 2. Adding a hybrid async tag to the head of your site. 
