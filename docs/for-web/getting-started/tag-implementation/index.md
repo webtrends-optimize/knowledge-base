@@ -32,7 +32,7 @@ This is used for client-side experimentation and personalisation. We have altern
 You can find a full tagging guide in the Optimize UI, found in the top nav. 
 ![Navigate to Tagging Guide](/assets/nav-taggingguide.png)
 
-The details convered in the UI include guidance on placement, Content Security Policies and Tag Management containers.
+The details covered in the UI include guidance on placement, Content Security Policies and Tag Management containers.
 
 There is also a downloadable PDF version, which you can easily hand over to your dev team.
 
@@ -69,7 +69,7 @@ Implementing this tag in the head allows us to perform all actions required.
 <script type="text/javascript" src="//c.webtrends-optimize.com/acs/accounts/abcdefgh-0123-ijkl-4567-mnopqrstuvqz/js/wt.js"></script>
 ```
 
-For it's intended use, you should not be adding async or defer attributes to this.
+For its intended use, you should not be adding async or defer attributes to this.
 
 #### Why is the Fully Synchronous tag used?
 
@@ -85,7 +85,7 @@ There are two key limitations to the Fully Synchronous tag.
 
 Render-blocking - Synchronous Javascript holds up the processing of anything that comes after it, and so if you have a request-heavy website, it's going to take a fraction longer to action these other things. 
 
-Vulnerable to no-responses - If for some reason your tag, which is hosted on Azure CDN, does not respond at all (as opposed to responding with errors), this could hold your website up indefinitely. This is the case with all synchoronous tags, not just ours, but is a potential vulnerability that some choose to address.
+Vulnerable to no-responses - If for some reason your tag, which is hosted on Azure CDN, does not respond at all (as opposed to responding with errors), this could hold your website up indefinitely. This is the case with all synchronous tags, not just ours, but is a potential vulnerability that some choose to address.
 
 #### Example of Fully Synchronous tag
 
@@ -105,7 +105,7 @@ You can also choose how to make the page:
 
 This is a more recent version of our tag. It's an asynchronous tag, i.e. non-blocking, but with masking until loaded/failed. This approach therefore has the visual impact of a synchronous tag (nothing shown to users at least until the tag fires), but does allow the rest of the page to continue loading in.
 
-It addreses some of the concerns of our default approach, but does carry it's own challenges/tradoffs too.
+It addresses some of the concerns of our default approach, but does carry it's own challenges/tradeoffs too.
 
 ``` html
 <script type="text/javascript">
@@ -138,7 +138,7 @@ It addreses some of the concerns of our default approach, but does carry it's ow
 
 For websites which have a lot of external content to load, it's sometimes useful to allow it to do so while we fetch and execute tests.
 
-It also comes with the added benefit of timeouts, and so is not vulernble to no-responses. 
+It also comes with the added benefit of timeouts, and so is not vulnerable to no-responses. 
 
 #### What potential limitations are there to the Hybrid Asynchronous tag?
 
@@ -160,13 +160,13 @@ You can also choose how to make the page:
 
 ### Tagging option 3 - Asynchronous / Delayed
 
-Some companies choose to implement Optimize in a fully asynchonus manner. The tag fill function in this manner - javascript will typically execute perfectly fine if run a little late - but you should note step 3 below, which would take place too late if the tag is async.
+Some companies choose to implement Optimize in a fully asynchronous manner. The tag fill function in this manner - javascript will typically execute perfectly fine if run a little late - but you should note step 3 below, which would take place too late if the tag is async.
 
 #### What is an Asynchronous / Delayed tag?
 
 ... and why should it be avoided:
 
-This is where usres take our usual tag, and do one of the following:
+This is where users take our usual tag, and do one of the following:
 
 - Add an async attribute, which stops blocking the page and therefore hinders our ability to mask the page before it's revealed to users.
 - Add a defer attribute, which delays execution of the tag until the browser feels there's sufficient bandwidth.
