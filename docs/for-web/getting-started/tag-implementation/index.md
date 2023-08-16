@@ -182,4 +182,4 @@ You do not need to necessarily do this through dev cycles with the IT team - the
 ## Read more:
 
 - [How the tag works](./how-the-tag-works/)
-- [Impact on page load performane](./impact-on-page-load-performance)
+- [Impact on page load performance](./impact-on-page-load-performance)
