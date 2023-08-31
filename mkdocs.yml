@@ -126,9 +126,12 @@ nav:
       - Push Integrations:
         - ContentSquare: for-web/integrations/push-integrations/contentsquare.md
         - Fullstory: for-web/integrations/push-integrations/fullstory.md
+        - Microsoft Clarity: for-web/integrations/push-integrations/microsoft-clarity.md
         - Google Universal Analytics: for-web/integrations/push-integrations/google-universal-analytics.md
         - Google Analytics 4 (GA4) GTM: for-web/integrations/push-integrations/google-analytics-4-gtm.md
         - Google Analytics 4 (GA4) GTAG: for-web/integrations/push-integrations/google-analytics-4-gtag.md
+        - Create your own - For Vendors: for-web/integrations/push-integrations/create-your-own-push-integration-vendor.md
+        - Create your own - For Users: for-web/integrations/push-integrations/create-your-own-push-integration-user.md.md
   #  - Reporting:
   #    - Getting started: reporting/index.md
   #  - Integrations:
@@ -140,7 +143,6 @@ nav:
   #      - Google Tag Manager: integrations/push/index.md
   #      - Heap Analytics: integrations/push/index.md
   #      - Hotjar: integrations/push/index.md
-  #      - Microsoft Clarity: integrations/push/index.md
   #      - Mixpanel: integrations/push/index.md
   #      - Mouseflow: integrations/push/index.md
   #      - Piwik Pro: integrations/push/index.md
