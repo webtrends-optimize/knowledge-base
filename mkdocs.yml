@@ -123,6 +123,12 @@ nav:
         - Taguchi/Fisher Method for Design of Experiments (DoE) in MVTs: for-web/reporting/stats-engine/taguchi-fisher-design-of-experiments-mvt.md
     - Integrations:
       - Getting started: for-web/integrations/index.md
+      - Push Integrations:
+        - ContentSquare: for-web/integrations/push-integrations/contentsquare.md
+        - Fullstory: for-web/integrations/push-integrations/fullstory.md
+        - Google Universal Analytics: for-web/integrations/push-integrations/google-universal-analytics.md
+        - Google Analytics 4 (GA4) GTM: for-web/integrations/push-integrations/google-analytics-4-gtm.md
+        - Google Analytics 4 (GA4) GTAG: for-web/integrations/push-integrations/google-analytics-4-gtag.md
   #  - Reporting:
   #    - Getting started: reporting/index.md
   #  - Integrations:
@@ -131,11 +137,7 @@ nav:
   #      - Adobe Analytics: integrations/push/index.md
   #      - Amplitude: integrations/push/index.md
   #      - AT Internet: integrations/push/index.md
-  #      - ContentSquare: integrations/push/index.md
-  #      - FullStory: integrations/push/index.md
-  #      - Google Analytics 4: integrations/push/index.md
   #      - Google Tag Manager: integrations/push/index.md
-  #      - Google Universal Analytics: integrations/push/index.md
   #      - Heap Analytics: integrations/push/index.md
   #      - Hotjar: integrations/push/index.md
   #      - Microsoft Clarity: integrations/push/index.md
