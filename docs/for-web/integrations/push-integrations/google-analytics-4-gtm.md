@@ -8,7 +8,7 @@ With the integration enabled. Each page view will generate an event “optimize_
 
 An example is illustrated below.
 
-![GTM Datalayer](/assets/ga4-gtm-datalayer.png)
+![GTM Datalayer](/assets/ga4-gtm-datalayer.png){style=max-width:500px;}
 
 The specific IDs and Alias reconcile with what is published for the specific test in the Webtrends Optimize Dashboard.
 
@@ -22,8 +22,31 @@ We will use the current GA/GTM integration, and swap out some content.
 
 ### 1. Enable the current GA integration
 
+1. Navigate to Manage > Integrations
+2. Find the GA integration, and Install it. 
+3. As with all integrations, select the tag/s you wish to apply it to, and flip the toggle switch to ON.
+
 ### 2. Replace content
 
+1. Hop over to the Code section, and replace the existing code with the following:
+
+    ``` javascript
+    window.dataLayer = window.dataLayer || [];
+    window.dataLayer.push({
+        'event': 'optimize_view',
+        'event_params': {
+                'project_alias': `{{eventCategory}}`,
+                'test_id': `{{eventAction}}`,
+                'experiment_id': `{{eventLabel}}`
+        }
+    });
+    ```
+
+2. Save and close. 
+
+Your integration will take some time to go live - usually less than 10 minutes. 
+
+Note this goes into your tag, which has a 24hr cache. You will need to hard-refresh (ctrl+shift+r / cmd+shift+r) to see an uncached page download.
 
 ## Google Tag Manager Configuration
 
