@@ -120,7 +120,15 @@ If empty, the array should look like this:
 WT.optimizeModule.prototype.whitelist = [];
 ```
 
-The _wt.testWhitelist=true option allows you to append this query string parameter to any URL, and test the impact of having masking enabled.
+#### Testing whitelist entries
+
+We recommend a Chrome Extension like Resource Override or application like Fiddler for rapidly testing updates locally (on your machine).
+
+If used, you'll be able to find the whitelist array, add values into it, and test it locally before saving changes in the UI.
+
+In the above example, _wt.testWhitelist can be added to any URL to test how the page would respond with whitelisting enabled. e.g. https://www.webtrends-optimize.com/?_wt.testWhitelist=true
+
+You could add multiple values with different CSS rules for each one, if you'd like to test whole page masking vs. masking a block on the page, for example.
 
 ### 3 - Write your own rules
 
