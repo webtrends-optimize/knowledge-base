@@ -74,6 +74,8 @@ Snippet:
 
 For this, we use the library as below and simply add rules into the array `WT.optimizeModule.prototype.whitelist` each time you build a new test.
 
+This code, as provided, should go into the pre-init section of your tag to fire at the right time.
+
 ``` javascript
 //Page Hide
 (function pageHide(){
@@ -111,6 +113,14 @@ For this, we use the library as below and simply add rules into the array `WT.op
     WT.optimizeModule.prototype.checkWhitelist_CUSTOM();
 })();
 ```
+
+If empty, the array should look like this:
+
+``` javascript
+WT.optimizeModule.prototype.whitelist = [];
+```
+
+The _wt.testWhitelist=true option allows you to append this query string parameter to any URL, and test the impact of having masking enabled.
 
 ### 3 - Write your own rules
 
