@@ -46,7 +46,7 @@ var wto_tagurl = "//c.webtrends-optimize.com/acs/accounts/MY-ACCOUNT-ID-HERE/js/
 
 if(document.cookie.match(/CookieConsent=[^;]+preferences.true/)){
     // If user has already opted-in, write the tag immediately and synchronously.
-    var wto_scripttag = '\x3Cscript type="text/javascript" src="' + wto_tagurl + '">\x3C/script>';
+    document.write('\x3Cscript type="text/javascript" src="' + wto_tagurl + '">\x3C/script>');
 } else {
     // Else wait for the cookiebot-accept, check for our preferences flag, and then write the tag to the page asynchronously.
     window.addEventListener('CookiebotOnAccept', function(){
