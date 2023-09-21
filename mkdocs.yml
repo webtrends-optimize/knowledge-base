@@ -50,6 +50,7 @@ nav:
       - Installing the Chrome Extension: for-web/getting-started/installing-the-chrome-extension.md
       - Tag Implementation: 
         - Tag Implementation: for-web/getting-started/tag-implementation/index.md
+        - Tag Implementation - Cookiebot: for-web/getting-started/tag-implementation/cookiebot.md
         - How the tag works: for-web/getting-started/tag-implementation/how-the-tag-works.md
         - Impact on page load performance: for-web/getting-started/tag-implementation/impact-on-page-load-performance.md
         - Content Security Policies: for-web/getting-started/tag-implementation/content-security-policies.md
