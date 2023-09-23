@@ -8,7 +8,7 @@ With the integration enabled. Each page view will generate an event “optimize_
 
 An example is illustrated below.
 
-![GTM Datalayer](/assets/ga4-gtm-datalayer.png){style=max-width:500px;}
+![GA4 - GTM Config - Console Output](/assets/ga4-gtm-console.png){style=max-width:300px;display:block;}
 
 The specific IDs and Alias reconcile with what is published for the specific test in the Webtrends Optimize Dashboard.
 
@@ -34,11 +34,9 @@ We will use the current GA/GTM integration, and swap out some content.
     window.dataLayer = window.dataLayer || [];
     window.dataLayer.push({
         'event': 'optimize_view',
-        'event_params': {
-            'project_alias': `{{eventCategory}}`,
-            'test_id': `{{eventAction}}`,
-            'experiment_id': `{{eventLabel}}`
-        }
+        'project_alias': `{{eventCategory}}`,
+        'test_id': `{{eventAction}}`,
+        'experiment_id': `{{eventLabel}}`
     });
     ```
 
@@ -52,7 +50,7 @@ Note this goes into your tag, which has a 24hr cache. You will need to hard-refr
 
 With the datalayer being populated we need to take the following steps in Google Tag Manager to ingest the data. 
 
-This can be achieced by creating a single **Tag**, a single custom **Trigger** and **3 Variables**
+This can be achieved by creating a single **Tag**, a single custom **Trigger** and **3 Variables**
 
 The navigation on the side allows the user to generate and review each of these GTM objects.
 
@@ -87,7 +85,7 @@ Once set up, the User Defined Variables should have these entries:
 3. Click onto the Tag Configuration block to edit it
 4. Choose the **Tag Type** of **Google Analytics GA4 Event**
 5. Enter your **Measurement ID**
-6. Enter the **Event Name** of **optimie_view**
+6. Enter the **Event Name** of **optimize_view**
 7. Provide the following Event Parameters:
     - **project_alias** is **{{project_alias}}**
     - **test_id** is **{{test_id}}**
@@ -122,7 +120,7 @@ At this point, your tag should look like this.
 3. Click Submit in the top-right. 
 4. Click Publish. 
 
-#### Step Validating the change
+#### Step 3 - Validating the change
 
 Once published and the snippet updates, you'll be able to see events firing into the datalayer in the console *as you fall into tests*. 
 
@@ -148,7 +146,7 @@ Once on the right screen, we want to create custom dimensions with the following
     **Scope:** Event
     **Description:** Project Alias for Webtrends Optimize
     **Event Parameter:** project_alias
-2. **Dimension Name:** test_is
+2. **Dimension Name:** test_id
     **Scope:** Event
     **Description:** Test ID for Webtrends Optimize
     **Event Parameter:** test_id
@@ -171,4 +169,4 @@ Note: It may take 24hrs for data to show up.
 
 ## Need help debugging your implementation? 
 
-We work with some excellent agencies who can help you debug and fix your analytics implementaton if needed. 
+We work with some excellent agencies who can help you debug and fix your analytics implementation if needed. 
