@@ -90,6 +90,7 @@ nav:
       - Getting started: for-web/build/index.md
       - Segmentation:
         - Segmentation: for-web/build/segmentation/index.md
+        - Geolocation: for-web/build/segmentation/geolocation.md
         - Weather: for-web/build/segmentation/weather.md
   #    - Visual Editor: 
   #      - Introduction: build/visual-editor/index.md

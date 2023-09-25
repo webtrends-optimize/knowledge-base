@@ -32,6 +32,28 @@ The following values are available - here are the names and descriptions.
 | weather_uv_index | decimal | The UV index.<br>E.g. 2.0
 | weather_uv | string | Translated UV band.<br><br>Possible values:<br>- **low**: Under 3.0<br>- **moderate**: 3.0 to 5.9<br>- **high**: 6.0 to 7.9<br>- **very high**: 8.0 to 10.9<br>- **extreme**: 11.0+
 
+## Accessing weather information with JavaScript
+
+You can access this weather information as part of your test. You'll find the information in the Optimize Data Layer. 
+
+``` javascript
+WT.optimizeModule.prototype.preinit.wtConfigObj.data.attribute_name
+```
+
+You could use this value to dynamically create an experience. For example changing the URL of a banner:
+
+``` javascript
+var temperature = WT.optimizeModule.prototype.preinit.wtConfigObj.data.weather_maxtemp_c;
+var image;
+
+if(temperatore > 18) image = "banner_hot.png";
+else if(temperatore > 10) image = "banner_average.png";
+else image = "banner_cold.png";
+
+document.getElementById('my-banner').src = image;
+```
+
+
 ## Weather Condition values
 
 Here are a full list of weather condition codes and weather condition text values.
