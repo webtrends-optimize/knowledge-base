@@ -88,6 +88,9 @@ nav:
           - Microsoft SSO: for-web/getting-started/user-management/single-sign-on/microsoft-sso.md
     - Build:
       - Getting started: for-web/build/index.md
+      - Segmentation:
+        - Segmentation: for-web/build/segmentation/index.md
+        - Weather: for-web/build/segmentation/weather.md
   #    - Visual Editor: 
   #      - Introduction: build/visual-editor/index.md
   #      - Transformations: build/visual-editor/index.md
