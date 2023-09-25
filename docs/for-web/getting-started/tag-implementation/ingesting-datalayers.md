@@ -37,7 +37,20 @@ var poll_for_datalayer = setInterval(function(){
     // Happy to run Optimize 
     WT.optimize.setup(WT.optimizeModule.prototype.wtConfigObj);
 
+    poll_for_datalayer = false;
+
 }, 100);
+
+// Safety redisplay
+setTimeout(function(){
+    if(poll_for_datalayer !== false){
+        clearInterval(poll_for_datalayer);
+        poll_for_datalayer = false;
+
+        // Run Optimize 
+        WT.optimize.setup(WT.optimizeModule.prototype.wtConfigObj);
+    }
+}, 2000);
 ```
 
 ## Ingesting the required data 
@@ -99,7 +112,20 @@ var poll_for_datalayer = setInterval(function(){
     // Happy to run Optimize 
     WT.optimize.setup(WT.optimizeModule.prototype.wtConfigObj);
 
+    poll_for_datalayer = false;
+
 }, 100);
+
+// Safety redisplay
+setTimeout(function(){
+    if(poll_for_datalayer !== false){
+        clearInterval(poll_for_datalayer);
+        poll_for_datalayer = false;
+
+        // Run Optimize 
+        WT.optimize.setup(WT.optimizeModule.prototype.wtConfigObj);
+    }
+}, 2000);
 ```
 
 ### Bloomreach example
@@ -121,5 +147,18 @@ var poll_for_datalayer = setInterval(function(){
     // Happy to run Optimize 
     WT.optimize.setup(WT.optimizeModule.prototype.wtConfigObj);
 
+    poll_for_datalayer = false;
+
 }, 100);
+
+// Safety redisplay
+setTimeout(function(){
+    if(poll_for_datalayer !== false){
+        clearInterval(poll_for_datalayer);
+        poll_for_datalayer = false;
+
+        // Run Optimize 
+        WT.optimize.setup(WT.optimizeModule.prototype.wtConfigObj);
+    }
+}, 2000);
 ```
