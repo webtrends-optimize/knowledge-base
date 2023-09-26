@@ -60,6 +60,11 @@ nav:
         - Masking: for-web/getting-started/tag-configuration/masking.md
         - Consent Management - Simple: for-web/getting-started/tag-configuration/consent-management-simple.md
         - Consent Management - Advanced: for-web/getting-started/tag-configuration/consent-management-advanced.md
+        - Scripts:
+          - Scripts: for-web/getting-started/tag-configuration/scripts/index.md
+          - Conversion Package: for-web/getting-started/tag-configuration/scripts/conversion-package.md
+          - Custom CSS Masking: for-web/getting-started/tag-configuration/scripts/custom-css-pagehide.md
+          - ES6 Aborts: for-web/getting-started/tag-configuration/scripts/es6.md
   #      - For Shopify: getting-started/tag-implementation/shopify.md
   #      - For Shopify Plus: getting-started/tag-implementation/shopify-plus.md
   #    - Global data capture:
