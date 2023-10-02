@@ -69,6 +69,7 @@ nav:
             - Microsoft SSO: for-web/getting-started/user-management/single-sign-on/microsoft-sso.md
     - Build:
       - Getting started: for-web/build/index.md
+      - States: for-web/build/states.md
       - Advanced Editor:
         - Introduction: for-web/build/advanced-editor/index.md
         - Scheduling: for-web/build/advanced-editor/scheduling.md
