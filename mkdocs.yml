@@ -63,7 +63,7 @@ nav:
           - Scripts: for-web/getting-started/tag-configuration/scripts/index.md
           - Conversion Package: for-web/getting-started/tag-configuration/scripts/conversion-package.md
           - Custom CSS Masking: for-web/getting-started/tag-configuration/scripts/custom-css-pagehide.md
-          - ES6 Aborts: for-web/getting-started/tag-configuration/scripts/es6.md
+          - Aborting the tag: for-web/getting-started/tag-configuration/scripts/aborting-the-tag.md
         - User Management: 
           - Single Sign On (SSO):
             - Microsoft SSO: for-web/getting-started/user-management/single-sign-on/microsoft-sso.md
