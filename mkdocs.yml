@@ -117,6 +117,9 @@ markdown_extensions:
 
 plugins:
   - glightbox
+  - social:
+      cards_layout_options:
+        font_family: Noto Sans SC
   - search:
       separator: '[\s\-,:!=\[\]()"/]+|(?!\b)(?=[A-Z][a-z])|\.(?!\d)|&[lg]t;'
 extra:
