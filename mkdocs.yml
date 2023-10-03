@@ -118,7 +118,6 @@ markdown_extensions:
 
 plugins:
   - glightbox
-  - social
   - search:
       separator: '[\s\-,:!=\[\]()"/]+|(?!\b)(?=[A-Z][a-z])|\.(?!\d)|&[lg]t;'
 extra:
