@@ -1,4 +1,5 @@
 site_name: Webtrends Optimize Knowledge Base
+site_url: https://docs.webtrends-optimize.com
 repo_url: https://github.com/webtrends-optimize/knowledge-base
 edit_uri: edit/main/docs/
 theme:
@@ -117,9 +118,7 @@ markdown_extensions:
 
 plugins:
   - glightbox
-  - social:
-      cards_layout_options:
-        font_family: Noto Sans SC
+  - social
   - search:
       separator: '[\s\-,:!=\[\]()"/]+|(?!\b)(?=[A-Z][a-z])|\.(?!\d)|&[lg]t;'
 extra:
