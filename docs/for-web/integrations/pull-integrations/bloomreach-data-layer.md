@@ -38,6 +38,8 @@ WT.optimize.setup(WT.optimizeModule.prototype.wtConfigObj);
 
 Once ingested into the platform via. post-load script, we can use Data Object Attribute matching for Locations and Segments.
 
+Make sure you use the same names sent into Bloomreach's data layer.
+
 ## Things to note
 
 - This script assumes the data is available by the time the Optimize tag loads. 
