@@ -99,11 +99,13 @@ nav:
         - Create your own - For Users: for-web/integrations/push-integrations/create-your-own-push-integration-user.md
       - Pull Integrations:
         - Pull Integrations: for-web/integrations/pull-integrations/index.md
-        - Bloomreach Data Layer: for-web/integrations/pull-integrations/bloomreach-data-layer.md
-        - GTM Data Layer for audiences: for-web/integrations/pull-integrations/gtm-data-layer.md
-        - GTM Events Mirroring for metric capture: for-web/integrations/pull-integrations/gtm-events-mirroring.md
-        - Google Analytics 4 Audiences: for-web/integrations/pull-integrations/ga4-audiences.md
-        - Planning Inc: for-web/integrations/pull-integrations/planning-inc.md
+        - External Audiences:
+          - Bloomreach Data Layer: for-web/integrations/pull-integrations/bloomreach-data-layer.md
+          - GTM Data Layer: for-web/integrations/pull-integrations/gtm-data-layer.md
+          - Google Analytics 4 Audiences: for-web/integrations/pull-integrations/ga4-audiences.md
+          - Planning Inc: for-web/integrations/pull-integrations/planning-inc.md
+        - Conversion Tracking:
+          - GTM Events Mirroring for metric capture: for-web/integrations/pull-integrations/gtm-events-mirroring.md
   - For Server Side:
     - Getting Started:
       - Getting started: for-server-side/getting-started/index.md
