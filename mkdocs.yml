@@ -88,6 +88,7 @@ nav:
     - Integrations:
       - Getting started: for-web/integrations/index.md
       - Push Integrations:
+        - Push Integrations: for-web/integrations/push-integrations/index.md
         - ContentSquare: for-web/integrations/push-integrations/contentsquare.md
         - Fullstory: for-web/integrations/push-integrations/fullstory.md
         - Microsoft Clarity: for-web/integrations/push-integrations/microsoft-clarity.md
@@ -96,6 +97,9 @@ nav:
         - Google Analytics 4 (GA4) GTAG: for-web/integrations/push-integrations/google-analytics-4-gtag.md
         - Create your own - For Vendors: for-web/integrations/push-integrations/create-your-own-push-integration-vendor.md
         - Create your own - For Users: for-web/integrations/push-integrations/create-your-own-push-integration-user.md
+      - Pull Integrations:
+        - Pull Integrations: for-web/integrations/pull-integrations/index.md
+        - Bloomreach Data Layer: for-web/integrations/pull-integrations/bloomreach-data-layer.md
   - For Server Side:
     - Getting Started:
       - Getting started: for-server-side/getting-started/index.md
