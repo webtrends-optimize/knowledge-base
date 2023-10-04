@@ -100,6 +100,7 @@ nav:
       - Pull Integrations:
         - Pull Integrations: for-web/integrations/pull-integrations/index.md
         - Bloomreach Data Layer: for-web/integrations/pull-integrations/bloomreach-data-layer.md
+        - Planning Inc: for-web/integrations/pull-integrations/planning-inc.md
   - For Server Side:
     - Getting Started:
       - Getting started: for-server-side/getting-started/index.md
