@@ -140,6 +140,8 @@ extra:
     - icon: fontawesome/brands/twitter
       link: https://www.youtube.com/@Webtrends-Optimize
   analytics:
+    provider: google
+    property: G-M7GZD78X0X
     feedback:
       title: Was this page helpful?
       ratings:
