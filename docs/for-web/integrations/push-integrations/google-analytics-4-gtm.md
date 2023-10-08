@@ -1,5 +1,3 @@
-**THIS DOCUMENT IS UNDER CONSTRUCTIONS**
-
 # Google Analytics 4 via. GTM - Push Integration
 
 This document describes how to send experiment views into GA4, which is sent via. GTM's dataLayer object.
