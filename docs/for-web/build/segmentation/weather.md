@@ -22,8 +22,8 @@ The following values are available - here are the names and descriptions.
 | weather_avgvis_km | decimal | Average visibility in kilometer<br>E.g. 10.0
 | weather_avgvis_miles | decimal | Average visibility in miles<br>E.g. 6.0
 | weather_avghumidity | integer | Average humidity as percentage<br>E.g. 74
-| weather_daily_will_it_rain | integer | Will it will rain or not.<br>1 = Yes, 2 = No
-| weather_daily_will_it_snow | integer | Will it will snow or not.<br>1 = Yes, 2 = No
+| weather_daily_will_it_rain | integer | Will it will rain or not.<br>1 = Yes, 0 = No
+| weather_daily_will_it_snow | integer | Will it will snow or not.<br>1 = Yes, 0 = No
 | weather_daily_chance_of_rain | integer | Chance of rain as percentage
 | weather_daily_chance_of_snow | integer | Chance of snow as percentage
 | weather_condition_text | string | Weather condition text. See possible values below.
