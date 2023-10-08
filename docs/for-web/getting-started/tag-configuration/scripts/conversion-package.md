@@ -1,5 +1,10 @@
 # Conversion Package
 
+To have a conversion package, you should add this code to your pre-init script in your Tag.
+
+There are two parts users typically maintain - the oConv array labelled Metrics, and Triggers.
+
+
 ``` javascript
 /* 
     CONVERSION PACKAGE
@@ -7,14 +12,41 @@
 (function() {
     try {
     
-        // Data Store
-        var testAliasExclusionList = ['ta_dummy_exclude'];
+        var testAliasExclusionList = ['ta_dummy_exclude']; // (3)!
 
-        var oConv =  [
+        // Metrics 
+        var oConv =  [ // (1)!
             {
-                name: 'conversion_name',
-                regex: /example.com/i
+                name: 'conversion_name', // (2)!
+                regex: /example.com/i       
             },
+            {
+                name: "page_cart",
+                path: /^\/cart\/?$/i // (4)!
+            },
+            {
+                name: "click_atb_pdp",
+                onEvent: "atb", // (6)!
+                regex: /\/products/
+            },
+            {
+                name: "page_shipping",
+                path: /\/checkout/i,
+                ifCondition: function(){ // (5)!
+                    return document.title.match(/\s*Shipping/i)
+                }
+            },
+            {
+                name: "purchase",
+                onEvent: "datalayer-ready",
+                collectData: function(){ // (7)!
+                    let purchaseEvent = dataLayer.filter(x => x.ecommerce);
+                    return {
+                        revenue: purchaseEvent.purchase.actionField.revenue,
+                        units: purchaseEvent.purchase.products.length
+                    }
+                }
+            }
         ];
 
         // Debugger
@@ -155,7 +187,7 @@
 
         /* Evaluate oConv Object
         -------------------------------------------------------------*/
-        function doEvaluate(onEvent){
+        function doEvaluate(onEvent){ // (8)!
 
             var wlh = window.location.href;
             var testAliases = Core.getTestAliases();
@@ -260,13 +292,15 @@
         };
         WT.helpers.CTrack2 = WTO_CTrack2;
 
-        /* Page Evaluation
+        /* Triggers (9)
         -------------------------------------------------------------*/
-        //onload
+        
+        // On page load
         WT.addEventHandler("INITIALIZE", function (r) {
-            doEvaluate(false);
+            doEvaluate(false); // (10)!
         });
-        //SPA navigation
+
+        // Poll for page change 
         var curURL = window.location.href;
         setInterval(function(){
             if(window.location.href !== curURL){
@@ -276,7 +310,7 @@
             }
         }, 1000);
 
-        /* window.opt_data
+        /* window.opt_data (11)
         -------------------------------------------------------------*/
         function processOptData(aEntry){
             try {
@@ -341,3 +375,30 @@
     }
 })();
 ```
+
+1. This is an Array of all metrics, irrespective of when they should fire.
+2. **Name**. The name you want to assign to the metric
+3. **Exclusion list**. If you don't want certain tests to capture any of these metrics, just add them into this exclusion list. 
+4. **URL or Path**. You can target URLs either by regex (full url) or path.
+5. **ifCondition**. You can specify javascript conditions for firing the metric here. These are a final check, and expect a true/false response.
+6. **onEvent**. Specifying an event corresponds to triggers, where you can pass in an event name. Consider it an additional layer of filtering - sending in the atb event to the trigger will only allow atb events to be evaluated - all others will be skipped. 
+7. **collectData**. Collect any data you wish, returned as a JSON object for us to collect. Make sure the data is flat - do not include nested objects.
+8. **doEvaluate**. The function that processes each item in the oConv object. 
+    
+    You can modify and add to this as you need to, to accept more arguments or handle them differently. 
+
+9. **triggers**. Defining when we should trigger an evaluation of the conversion package.
+10. **doEvaluate(false)**. Passing in false means assuming no event has been defined. This is the default.
+
+    You could change this to `doEvaluate("datalayer-ready")` to evaluate tests with that event assigned.
+
+11. **opt_data**. This provides a user-accessible function that allows them to track metrics for every project. 
+
+    It is similar to `datalayer.push` - use it by adding it to your website and pushing in events as you wish to collect them.
+
+    As with anything API or code driven, you do not need to define these events anywhere else, although we recommend storing them in the Automatic Conversions section. 
+    
+    You do, however, need to define any Custom Data attributes you attach to these events, like Revenue and Units that you'd attach to a Purchase event.
+
+100.  :man_raising_hand: I'm a code annotation! I can contain `code`, __formatted
+    text__, images, ... basically anything that can be written in Markdown.

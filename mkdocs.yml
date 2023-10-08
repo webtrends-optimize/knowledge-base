@@ -8,6 +8,7 @@ theme:
   features:
     - announce.dismiss
     - content.code.copy
+    - content.code.annotate
     - content.tabs.link
     - navigation.expand
     - navigation.footer
