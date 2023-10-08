@@ -87,9 +87,9 @@ nav:
         - Stats Engine: for-web/reporting/stats-engine/index.md
         - Taguchi/Fisher Method for Design of Experiments (DoE) in MVTs: for-web/reporting/stats-engine/taguchi-fisher-design-of-experiments-mvt.md
     - Integrations:
-      - Getting started: for-web/integrations/index.md
+      - Integrations: for-web/integrations/index.md
       - Push Integrations:
-        - Push Integrations: for-web/integrations/push-integrations/index.md
+        #- Push Integrations: for-web/integrations/push-integrations/index.md
         - ContentSquare: for-web/integrations/push-integrations/contentsquare.md
         - Fullstory: for-web/integrations/push-integrations/fullstory.md
         - Microsoft Clarity: for-web/integrations/push-integrations/microsoft-clarity.md
@@ -99,7 +99,7 @@ nav:
         - Create your own - For Vendors: for-web/integrations/push-integrations/create-your-own-push-integration-vendor.md
         - Create your own - For Users: for-web/integrations/push-integrations/create-your-own-push-integration-user.md
       - Pull Integrations:
-        - Pull Integrations: for-web/integrations/pull-integrations/index.md
+        #- Pull Integrations: for-web/integrations/pull-integrations/index.md
         - External Audiences:
           - Bloomreach Data Layer: for-web/integrations/pull-integrations/bloomreach-data-layer.md
           - GTM Data Layer: for-web/integrations/pull-integrations/gtm-data-layer.md

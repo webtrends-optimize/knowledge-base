@@ -7,17 +7,41 @@ glightbox: false
 <style>
 .integration-tiles { display: flex; flex-wrap: wrap; gap: 20px; }
 
-.integration-tiles > a { flex: 1 1 calc(33% - 40px); color: inherit; text-decoration: none; text-align: center; border: 1px #eee solid; font-size: 85%; }
+.integration-tiles > a { flex: 1 1 calc(33% - 40px); color: inherit; text-decoration: none; text-align: center; border: 1px #eee solid; }
 
-.integration-tiles > a > div:first-child { border-bottom: 1px #eee solid; padding-bottom: 10px; height: 150px; background: #f0f0f0 url() center center no-repeat; background-size: contain;     display: flex; align-items: center; justify-content: center; }
+.integration-tiles > a > div:first-child { border-bottom: 1px #eee solid; padding-bottom: 10px; height: 150px; background: #f3f3f3 url() center center no-repeat; background-size: contain;     display: flex; align-items: center; justify-content: center; }
+
+.integration-tiles > a:hover > div:first-child { background: #e0ffe0; }
 
 .integration-tiles > a > div:first-child img { max-height: 100px; max-width: 80%; }
 
-.integration-tiles > a > div:nth-child(2) { line-height: 30px; }
+.integration-tiles > a > div:nth-child(2) { line-height: 40px; }
 
 </style>
 
-## Push
+<script>
+function makeTiles(list){
+
+list = list.sort().map(x => {
+let [name, img, link] = x.split(' :: ');
+
+return (
+`<a href="${link}">
+    <div><img alt="${name}" src="/assets/vendors/${img}"></div>
+    <div>${name}</div>
+</a>`
+);
+
+}).join('');
+
+document.write(list);
+
+}
+</script>
+
+## Push Integrations
+
+### Existing Push Integrations
 
 These integrations send data **from Webtrends Optimize** into 3rd party platforms. They're focused on web, and the sending of experiment data specifically (project alias, test id, experiment id).
 
@@ -26,7 +50,7 @@ These integrations send data **from Webtrends Optimize** into 3rd party platform
 
 var list = [
     'Accoustic Tealeaf :: accoustic-tealeaf.svg :: ./push-integrations/accoustic-tealeaf',
-    'Adobe Analytics :: adobe-analytics.png :: ./push-integrations/adobe-analytics',
+    'Adobe Analytics :: adobe-analytics.svg :: ./push-integrations/adobe-analytics',
     'Amplitude :: amplitude.svg :: ./push-integrations/amplitude',
     'AT Internet :: at-internet.svg :: ./push-integrations/at-internet',
     'Contentsquare :: contentsquare.svg :: ./push-integrations/contentsquare',
@@ -43,23 +67,10 @@ var list = [
     'Quantum Metric :: quantum-metric.svg :: ./push-integrations/quantum-metric',
     'Salesforce CRM :: salesforce.svg :: ./push-integrations/salesforce',
     'Tealium :: tealium.svg :: ./push-integrations/tealium',
-    'Twilio Segment.io :: segmentio.png :: ./push-integrations/segmentio',
+    'Twilio Segment.io :: segmentio.svg :: ./push-integrations/segmentio',
 ];
 
-list = list.sort().map(x => {
-    let [name, img, link] = x.split(' :: ');
-
-return (
-`<a href="${link}">
-    <div><img alt="${name}" src="/assets/vendors/${img}"></div>
-    <div>${name}</div>
-</a>`
-);
-
-}).join('');
-
-console.log(list);
-document.write(list);
+makeTiles(list);
 
 </script>
 </div>
@@ -78,7 +89,7 @@ You can create your own integrations - here are guides depending on your role.
 </a>
 </div>
 
-## Pull
+## Pull Integrations
 
 These integrations address the consumption of data from third party systems **into Webtrends Optimize**. 
 
@@ -90,21 +101,12 @@ We can pull audiences from 3rd party platforms into Webtrends Optimize.
 <script>
 
 var list = [
-    'Bloomreach Data Layer :: bloomreach.png :: ./pull-integrations/bloomreach-data-layer/',
+    'Bloomreach Data Layer :: bloomreach.svg :: ./pull-integrations/bloomreach-data-layer/',
     'GTM Data Layer :: gtm.png :: ./pull-integrations/gtm-data-layer/',
-    'Google Analytics 4 Segments :: ga4.png :: ./pull-integrations/ga4-audiences/',
+    'Google Analytics 4 Segments :: ga4.svg :: ./pull-integrations/ga4-audiences/',
 ];
 
-list.sort().forEach(x => {
-    let [name, img, link] = x.split(' :: ');
-
-document.write(
-`<a href="${link}">
-    <div>&nbsp;</div>
-    <div>${name}</div>
-</a>`
-);
-});
+makeTiles(list);
 
 </script>
 </div>
@@ -119,16 +121,7 @@ var list = [
     'GTM Event Mirroring :: gtm.png :: ./pull-integrations/gtm-events-mirroring/',
 ];
 
-list.sort().forEach(x => {
-    let [name, img, link] = x.split(' :: ');
-
-document.write(
-`<a href="${link}">
-    <div>&nbsp;</div>
-    <div>${name}</div>
-</a>`
-);
-});
+makeTiles(list);
 
 </script>
 </div>
