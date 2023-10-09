@@ -76,5 +76,7 @@ The following 1 page guides are available:
 - Amplitude (push)
 - Bloomreach (pull)
 
+More details to follow
+
 </div>
 </div>
