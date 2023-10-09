@@ -61,7 +61,7 @@ var list = [
     'Google Analytics 4 (GTAG) :: ga4.svg :: ./push-integrations/google-analytics-4-gtag',
     'Heap Analytics :: heap.svg :: ./push-integrations/heap-analytics',
     'Hotjar :: hotjar.svg :: ./push-integrations/hotjar',
-    'Piwik Pro :: piwikpro.svg :: ./push-integrations/piwik-pro',
+    'Piwik Pro :: piwik-pro.svg :: ./push-integrations/piwik-pro',
     'Medallia / Decibel Insights :: medallia.svg :: ./push-integrations/medallia',
     'Microsoft Clarity :: microsoftclarity.png :: ./push-integrations/microsoft-clarity',
     'Mixpanel :: mixpanel.svg :: ./push-integrations/mixpanel',
