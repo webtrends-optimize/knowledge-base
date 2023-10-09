@@ -92,6 +92,7 @@ nav:
         #- Push Integrations: for-web/integrations/push-integrations/index.md
         - ContentSquare: for-web/integrations/push-integrations/contentsquare.md
         - Fullstory: for-web/integrations/push-integrations/fullstory.md
+        - Hotjar: for-web/integrations/push-integrations/hotjar.md
         - Microsoft Clarity: for-web/integrations/push-integrations/microsoft-clarity.md
         - Google Universal Analytics: for-web/integrations/push-integrations/google-universal-analytics.md
         - Google Analytics 4 (GA4) GTM: for-web/integrations/push-integrations/google-analytics-4-gtm.md
