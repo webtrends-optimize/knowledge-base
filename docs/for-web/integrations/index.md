@@ -52,7 +52,7 @@ var list = [
     'Accoustic Tealeaf :: accoustic-tealeaf.svg :: ./push-integrations/accoustic-tealeaf',
     'Adobe Analytics :: adobe-analytics.svg :: ./push-integrations/adobe-analytics',
     'Amplitude :: amplitude.svg :: ./push-integrations/amplitude',
-    'AT Internet :: at-internet.svg :: ./push-integrations/at-internet',
+    'Piano Analytics / AT Internet :: at-internet.svg :: ./push-integrations/piano-analytics',
     'Contentsquare :: contentsquare.svg :: ./push-integrations/contentsquare',
     'Fullstory :: fullstory.svg :: ./push-integrations/fullstory',
     'Glassbox / Sessioncam :: glassbox.svg :: ./push-integrations/glassbox',

@@ -1,4 +1,4 @@
-# Planning Inc - Pull Integration
+# Integrate Webtrends Optimize with Planning Inc - Pull Integration
 
 Planning Inc is a data company, and we integrate with them on a "pull" basis. 
 

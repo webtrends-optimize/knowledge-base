@@ -1,4 +1,4 @@
-# Google Universal Analytics - Push Integration
+# Integrate Webtrends Optimize with Google Analytics (Universal Analytics) - Push Integration
 
 **This page is under construction.**
 

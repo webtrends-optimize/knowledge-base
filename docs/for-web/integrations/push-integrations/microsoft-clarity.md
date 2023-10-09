@@ -1,4 +1,4 @@
-# Microsoft Clarity - Push Integration
+# Integrate Webtrends Optimize with Microsoft Clarity - Push Integration
 
 Microsoft Clarity offers free session recording as well as heatmaps. 
 

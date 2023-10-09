@@ -1,4 +1,4 @@
-# Bloomreach Data Layer - Pull Integration
+# Integrate Webtrends Optimize with Bloomreach Data Layer - Pull Integration
 
 This integration takes data found in the Bloomreach Data Layer, and ingests it into the Optimize data layer so that you can use it for Location targeting and Segments / Audiences. 
 

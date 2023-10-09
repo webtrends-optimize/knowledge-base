@@ -1,4 +1,4 @@
-# Hotjar - Push Integration
+# Integrate Webtrends Optimize with Hotjar - Push Integration
 
 This integration will send experiment views into Hotjar as an event, allowing you to then filter on that information. 
 

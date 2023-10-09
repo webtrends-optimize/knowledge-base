@@ -1,4 +1,4 @@
-# Tealium - Push Integration
+# Integrate Webtrends Optimize with Tealium - Push Integration
 
 Tealium allows for analytical reporting on web events. 
 
