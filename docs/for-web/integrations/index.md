@@ -53,6 +53,7 @@ var list = [
     'Adobe Analytics :: adobe-analytics.svg :: ./push-integrations/adobe-analytics',
     'Amplitude :: amplitude.svg :: ./push-integrations/amplitude',
     'Piano Analytics / AT Internet :: at-internet.svg :: ./push-integrations/piano-analytics',
+    'Crazy Egg :: crazyegg.svg :: ./push-integrations/crazy-egg',
     'Contentsquare :: contentsquare.svg :: ./push-integrations/contentsquare',
     'Fullstory :: fullstory.svg :: ./push-integrations/fullstory',
     'Glassbox / Sessioncam :: glassbox.svg :: ./push-integrations/glassbox',
@@ -61,6 +62,9 @@ var list = [
     'Google Analytics 4 (GTAG) :: ga4.svg :: ./push-integrations/google-analytics-4-gtag',
     'Heap Analytics :: heap.svg :: ./push-integrations/heap-analytics',
     'Hotjar :: hotjar.svg :: ./push-integrations/hotjar',
+    'Inspectlet :: inspectlet.svg :: ./push-integrations/inspectlet',
+    'Kissmetrics :: kissmetrics.svg :: ./push-integrations/kissmetrics',
+    'Lucky Orange :: lucky-orange.svg :: ./push-integrations/lucky-orange',
     'Piwik Pro :: piwik-pro.svg :: ./push-integrations/piwik-pro',
     'Medallia / Decibel Insights :: medallia.svg :: ./push-integrations/medallia',
     'Microsoft Clarity :: microsoftclarity.png :: ./push-integrations/microsoft-clarity',
@@ -70,6 +74,7 @@ var list = [
     'Salesforce CRM :: salesforce.svg :: ./push-integrations/salesforce',
     'Tealium :: tealium.svg :: ./push-integrations/tealium',
     'Twilio Segment.io :: segmentio.svg :: ./push-integrations/segmentio',
+    'Zuko Analytics :: zuko.svg :: ./push-integrations/zuko',
 ];
 
 makeTiles(list);
