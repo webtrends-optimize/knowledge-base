@@ -92,11 +92,12 @@ nav:
         #- Push Integrations: for-web/integrations/push-integrations/index.md
         - ContentSquare: for-web/integrations/push-integrations/contentsquare.md
         - Fullstory: for-web/integrations/push-integrations/fullstory.md
-        - Hotjar: for-web/integrations/push-integrations/hotjar.md
-        - Microsoft Clarity: for-web/integrations/push-integrations/microsoft-clarity.md
         - Google Universal Analytics: for-web/integrations/push-integrations/google-universal-analytics.md
         - Google Analytics 4 (GA4) GTM: for-web/integrations/push-integrations/google-analytics-4-gtm.md
         - Google Analytics 4 (GA4) GTAG: for-web/integrations/push-integrations/google-analytics-4-gtag.md
+        - Hotjar: for-web/integrations/push-integrations/hotjar.md
+        - Microsoft Clarity: for-web/integrations/push-integrations/microsoft-clarity.md
+        - Tealium: for-web/integrations/push-integrations/tealium.md
         - Create your own - For Vendors: for-web/integrations/push-integrations/create-your-own-push-integration-vendor.md
         - Create your own - For Users: for-web/integrations/push-integrations/create-your-own-push-integration-user.md
       - Pull Integrations:

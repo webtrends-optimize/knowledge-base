@@ -3,6 +3,7 @@
 This integration will send experiment views into Hotjar as an event, allowing you to then filter on that information. 
 
 **Note:** Hotjar has a tiered offering, and not all users have access to the feature of segmentation by event. 
+
 **Note:** There may be nuances in scopes reported on - session vs. user. We recommend Hotjar for viewing session recordings, but not for any further analysis. 
 
 ## Pre-init script
