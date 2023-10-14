@@ -85,6 +85,7 @@ nav:
       - Getting started: for-web/reporting/index.md
       - Stats Engine:
         - Stats Engine: for-web/reporting/stats-engine/index.md
+        - T Tests: for-web/reporting/stats-engine/t-tests.md
         - Taguchi/Fisher Method for Design of Experiments (DoE) in MVTs: for-web/reporting/stats-engine/taguchi-fisher-design-of-experiments-mvt.md
     - Integrations:
       - Integrations: for-web/integrations/index.md
