@@ -14,7 +14,7 @@ These places are:
     
     - Read more at: [Tag Implementation - Tagging Options](/for-web/getting-started/tag-implementation/#tagging-options)
 
-- **While tests are fetched and executed.** Our tests are remote, and users only download what they need. We have in-tag masking as part of this approach. It can be for the whole site, page-by-page or block-by-block. We mask these parts you select whilst fetching tests. The moment they’ve executed, this mask is removed - it’s not on the page for X seconds no matter what, although we do have timeouts/failsafes.
+- **While tests are fetched and executed.** Our tests are remote, and users only download what they need. We have in-tag masking as part of this approach. It can be for the whole site, page-by-page or block-by-block. We mask these parts you select whilst fetching tests. The moment they’ve executed, this mask is removed - it’s not on the page for X seconds no matter what, although we do have timeouts/fail-safes.
 - **While your test waits for the page to be ready.** At times, you may have tests which wait for some elements to show up, for the page to load, for the response of an API call etc. In this scenario, you can apply an in-test masking until the things you need are ready to transform.
 
 It might sound like a lot, but we are very thorough with it, and the per-test effort once you’re familiar with the process is only an extra 1-2 minutes max. This granular / wholistic approach ensures we only mask what we need to, and for no longer than is necessary.
@@ -30,7 +30,7 @@ In Webtrends Optimize, we refer to masking as the technique by which we hide the
 We have different places where masking can occur:
 
 - Before the tag, if an async implementation is used.
-- In the tag config or preinit, while tests are being loaded
+- In the tag config or pre-init, while tests are being loaded
 - In the test, if you're waiting on additional things from the page before rendering your changes. 
 
 Each of these steps are vital in ensuring there is zero content flickering.
@@ -55,7 +55,7 @@ This approach has been used successfully on some request-light websites, and eff
 ## In tag masking
 
 !!! note "24 hour cache"
-    Our tag sits on a CDN and is cached for upto 24 hours to keep Google happy. Please plan your updates in advance. 
+    Our tag sits on a CDN and is cached for up to 24 hours to keep Google happy. Please plan your updates in advance. 
 
 While you're waiting for your tests to load, you have two core options for masking.
 
@@ -70,7 +70,7 @@ When modifying your tag, you'll see Display Mode. The options in this dropdown a
 - None: No masking. This is enabled by default, to keep our footprint light unless we decide otherwise.
 - Display: Applying `display: none` to the body tag. 
 - Visibility: Applying `visibility: hidden` to the body tag
-- Shift: Applying `left: -1000%; posiiton: absolute` to the body tag.
+- Shift: Applying `left: -1000%; position: absolute` to the body tag.
 - Overlay: Create a layer that sits above the web page.
 
 We pick from these options based on the website - some are fine to have the body hidden, some aren't. 
@@ -163,7 +163,7 @@ WT.addEventHandler("hide_show", function(e){
 
 ## In test masking
 
-Let's say you want to wait for the page to load before executing your changes, and so you hook into the domready state with jQuery:
+Let's say you want to wait for the page to load before executing your changes, and so you hook into the dom-ready state with jQuery:
 
 ``` javascript
 jQuery(document).ready(function(){
@@ -202,9 +202,9 @@ Thankfully, these are not things you need to pay attention to, although if you w
 
 ## Impact on page load performance 
 
-All JavaScript has a detrimatental impact on page load performance, but masking plays a critical role in limiting the negative impacts of experimentation. 
+All JavaScript has a detrimental impact on page load performance, but masking plays a critical role in limiting the negative impacts of experimentation. 
 
-Core Web Vitals find Cumulative Layout Shift (CLS) to be one of the most important factors for onpage performance. This is where parts of the page jump, fractionally or drastically, during the page load process. 
+Core Web Vitals find Cumulative Layout Shift (CLS) to be one of the most important factors for on-page performance. This is where parts of the page jump, fractionally or drastically, during the page load process. 
 
 For example, a button slowly nudges lower and lower as more aspects load. 
 
