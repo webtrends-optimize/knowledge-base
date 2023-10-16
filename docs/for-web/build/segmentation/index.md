@@ -1,8 +1,8 @@
+*Note that this section is being actively populated, and so many links are pending.*
+
 # Segmentation
 
 The following are options for user targeting and/or personalisation that are available in the Optimize platform. 
-
-*Note that the help docs are being actively populated, and so many links are pending.*
 
 | Name | Description |
 | ---------------------- | ----------------------
