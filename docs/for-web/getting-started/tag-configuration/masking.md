@@ -1,5 +1,26 @@
 # Masking
 
+## How does Webtrends Optimize deal with Content Flickering
+
+*A summary of how we deal with Content Flickering in Webtrends Optimize.*
+
+We understand that other platforms have an approach of “hide the page for X seconds, and assume tests will have loaded in this time” - we do not take this approach with Webtrends Optimize.
+
+With us, we consider why masking could occur, where it could occur, and target these in the best way possible.
+
+These places are:
+
+- **While our JS tag loads.** We ask that you place it in the head and be synchronous, or head and be asynchronous with extra masking, in which case there’s zero choice of content flickering happening here.
+    
+    - Read more at: [Tag Implementation - Tagging Options](/for-web/getting-started/tag-implementation/#tagging-options)
+
+- **While tests are fetched and executed.** Our tests are remote, and users only download what they need. We have in-tag masking as part of this approach. It can be for the whole site, page-by-page or block-by-block. We mask these parts you select whilst fetching tests. The moment they’ve executed, this mask is removed - it’s not on the page for X seconds no matter what, although we do have timeouts/failsafes.
+- **While your test waits for the page to be ready.** At times, you may have tests which wait for some elements to show up, for the page to load, for the response of an API call etc. In this scenario, you can apply an in-test masking until the things you need are ready to transform.
+
+It might sound like a lot, but we are very thorough with it, and the per-test effort once you’re familiar with the process is only an extra 1-2 minutes max. This granular / wholistic approach ensures we only mask what we need to, and for no longer than is necessary.
+
+A more detailed explanation of masking can be found below.
+
 ## What is masking?
 
 In Webtrends Optimize, we refer to masking as the technique by which we hide the page, or parts of the page, until the final content is rendered for users. By doing so, we ensure there is no Content Flickering - where users see the old content, a flash, and then the new content loads in. 
