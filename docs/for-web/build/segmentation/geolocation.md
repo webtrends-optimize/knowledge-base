@@ -2,7 +2,7 @@
 
 You can segment by the user's location in Webtrends Optimize, or use these values as part of your test code by accessing the values with JavaScript.
 
-We use Cloudflare, one of the world's largest networks, asengine for doing these lookups.
+We use Cloudflare, one of the world's largest networks, as the engine for doing these lookups.
 
 **Note:** We will need to enable this for you - we default to downloading as little data as possible and so don't add these values for customers unless required. Please email us at support@webtrends-optimize.com to get it enabled.
 
@@ -12,7 +12,7 @@ The following values are available - here are the names and descriptions.
 
 | Attribute               | Data Type | Description |
 | ----------------------- | --------- | ----------- |
-| _wm_TimeOffset | integer | Timezone Offset, in miliseconds
+| _wm_TimeOffset | integer | Timezone Offset, in milliseconds
 | _wm_city | string | The user's city.
 | _wm_continentCode | string | Two-character continent code.<br>E.g. EU
 | _wm_countryCode | string | Two-character country code.<br>E.g. UK
