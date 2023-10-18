@@ -2,6 +2,7 @@ site_name: Webtrends Optimize Knowledge Base
 site_url: https://docs.webtrends-optimize.com
 repo_url: https://github.com/webtrends-optimize/knowledge-base
 edit_uri: edit/main/docs/
+dev_addr: '127.0.0.1:9000'
 theme:
   name: material
   logo: assets/logo.svg

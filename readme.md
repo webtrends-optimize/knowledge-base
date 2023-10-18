@@ -4,22 +4,21 @@
 
 However works for your OS.
 
-## Install mkdocs-material
+## Clear all dependencies and then install them.
 
 ```
-pip install mkdocs-material
+pip uninstall -r requirements.txt -y
+pip install -r requirements.txt
 ```
 
-## Install dependencies
-
-```
-pip install mkdocs-glightbox
-```
+Note: On some devices like Mac, you might have it installed as pip3 instead of pip.
 
 ## Run the service 
 ```
 python -m mkdocs serve
 ```
+
+Note: On some devices like Mac, you might have it installed as python3 instead of python. 
 
 ## Preview in browser as you make changes
 
