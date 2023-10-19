@@ -1,9 +1,110 @@
 # Conversion Package
 
-To have a conversion package, you should add this code to your pre-init script in your Tag.
+For most clients with a stable testing programme, we want to track similar things for every project. Sometimes, these won’t be relevant, but we still recommend establishing core journeys. For retail sites, this may include the flow of Basket > Delivery > Payment > Purchase. For lead-gen sites, perhaps it’s Form Page > Submission.
+
+For these, we auto-track key conversion events (including Custom Data) for all projects you run. This page details how.
 
 There are two parts users typically maintain - the oConv array labelled Metrics, and Triggers.
 
+## Section - Defining Metrics 
+
+We hold a single object in which we define our events. The object looks similar to:
+
+
+``` javascript
+[
+    // Simple Page Load
+    {
+        name: 'Basket_Page',
+        regex: /www.mysite.com\/basket/i
+    },
+
+    // Events triggered under additional conditions (defined later)
+    {
+        name: 'Step 1',
+        regex: /www.mysite.com\/checkout\/step1/i,
+        onEvent: "spa"
+    },
+    {
+        name: 'Step 2',
+        regex: /www.mysite.com\/checkout\/step2/i,
+        onEvent: "spa"
+    },
+
+    // Conditional Conversion
+    {
+        name: 'Registration Complete',
+        regex: /www.mysite.com\/.+/i,
+        ifCondition: function(){
+            return window.something === "UserHasJustRegistered"; // returned value evaluated as truthy.
+        }
+    },
+
+    // Custom Data
+    {
+        name: 'Purchase',
+        regex: /www.mysite.com\/order\/confirmation/i,
+        collectData: function () {
+            return {
+                AOV : window.AOV, // looking at a page variable.
+                UPT: jQuery('meta[name="basket.qty"]').attr('content') // looking at content on the page 
+            };
+        }
+    }
+]
+```
+
+Let’s look at some of these parameters:
+
+- `name` – String, Required. The name you want to track the conversion event as. Can contain spaces and underscores, but no other special characters.
+- `regex` – Regex, Required. The page, or range of pages, under which this conversion event would be eligible. Other checks can still occur on top of this before the conversion is sent.
+- `onEvent` – String, Optional. We have triggers described below, which emit events. Your conversion can be evaluated on that event. Regexs and other conditions will still apply, but will only be evaluated once there’s a matching event (if one has been specified).
+- `ifCondition` – Function, Optional. If there is some JS logic you would like to run as part of the checks for whether or not a conversion is eligible to be triggered, they go here.
+- `collectData` – Function, Optional, must return a valid Object. If you have Custom Data you’d like to track, such as Revenue, Units Per Transaction, etc., this is where you collect them. If you need to wait for something to become available before you can do this, use onEvent for your conversion event and define a trigger when that time/event takes place.
+
+## Section - Triggers
+Triggers define a moment under which we will re-evaluate all conversions. We start with one basic trigger, which executes immediately: `doEvaluate(false);`. false in this situation, simply ensures the lack of a defined event.
+
+To add additional triggers, you can write whatever conditions you wish, and then simply call `doEvaluate("myEvent")` when they take place.
+
+An example of this is for single-page applications (SPAs), where we want to listen for a root element to change (`main`, in this example), and then launch our tracking:
+
+### Trigger - SPA example
+
+``` javascript
+(function(){
+    
+    var curURL = window.location.href;
+    
+    // Poll for target element 
+    var intvl = setInterval(function(){
+        
+        var target = document.querySelector('main');
+        if(!target) return;
+        clearInterval(intvl);
+        
+        // Element exists, add mutation observer 
+        var config = { attributes: false, childList: true, subtree: false };
+        var callback = function(){
+            
+            if(window.location.href == curURL) return; // page hasn't changed changed 
+            
+            // update curURL variable to ensure we don't spam the conversions.
+            curURL = window.location.href;
+            
+            // page has changed, trigger evaluation
+            doEvaluate("spa");
+            
+        };
+        var observer = new MutationObserver(callback);
+        observer.observe(target, config);
+        
+    }, 500);
+    
+})();
+```
+
+## Full Script
 
 ``` javascript
 /* 
