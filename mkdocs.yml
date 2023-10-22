@@ -67,6 +67,8 @@ nav:
           - Conversion Package: for-web/getting-started/tag-configuration/scripts/conversion-package.md
           - Custom CSS Masking: for-web/getting-started/tag-configuration/scripts/custom-css-pagehide.md
           - Aborting the tag: for-web/getting-started/tag-configuration/scripts/aborting-the-tag.md
+          - New and Returning users: for-web/getting-started/tag-configuration/scripts/new-returning.md
+          - WT.Storage: for-web/getting-started/tag-configuration/scripts/wt-storage.md
         - User Management: 
           - Single Sign On (SSO):
             - Microsoft SSO: for-web/getting-started/user-management/single-sign-on/microsoft-sso.md
