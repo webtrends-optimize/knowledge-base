@@ -82,6 +82,7 @@ nav:
         - Segmentation: for-web/build/segmentation/index.md
         - Device: for-web/build/segmentation/device.md
         - Data Layer: for-web/build/segmentation/data-layer.md
+        - New or Returning: for-web/build/segmentation/new-returning.md
         - Bloomreach Data Layer: for-web/build/segmentation/data-layer-bloomreach.md
         - GTM Data Layer: for-web/build/segmentation/data-layer-gtm.md
         - Geolocation: for-web/build/segmentation/geolocation.md

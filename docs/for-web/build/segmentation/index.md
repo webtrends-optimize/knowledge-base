@@ -13,7 +13,7 @@ The following are options for user targeting and/or personalisation that are ava
 | Cookie Value | Segment by any first-party cookies on the page.
 | Meta Tags | Segment by any meta tags found on the page, by name and content.
 | IP Address | Plus lookups for Domain Controller Company, and an estimation of Home/Business
-| New vs. Returning |
+| New vs. Returning | Read more:<br>[New or Returning Segmentation](./new-returning)
 | Geolocation | Related attributes include Continent, Country Code, Country Name, City, Region, Area Code, Postal Code, Longitude, Latitude<br>Read more: [Geolocation Segmentation](./geolocation)
 | Weather | Read more: [Weather Segmentation](./weather)
 | Third Party Uploaded Audiences | Consume audience lists from external systems, and use this information for targeting.
