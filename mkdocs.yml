@@ -78,6 +78,7 @@ nav:
       - Advanced Editor:
         - Introduction: for-web/build/advanced-editor/index.md
         - Scheduling: for-web/build/advanced-editor/scheduling.md
+        - Metric Capture: for-web/build/advanced-editor/metric-capture.md
       - Segmentation:
         - Segmentation: for-web/build/segmentation/index.md
         - Device: for-web/build/segmentation/device.md
