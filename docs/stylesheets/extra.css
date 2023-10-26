@@ -211,3 +211,22 @@ form.md-feedback img {
         display: block;
     }    
 }
+
+.grid.cards ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin: 0;
+}
+
+.grid.cards li {
+    flex: 1 1 calc(50% - 40px);
+    list-style: none;
+    margin: 0 !important;
+    padding: 10px;
+    border: 1px #ddd solid;
+}
+
+.grid.cards hr {
+    margin: 10px 0;
+}
